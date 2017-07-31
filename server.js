@@ -9,12 +9,19 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+// app.get('/', function (req, res) {
+// 	res.send('hello world');
+// })
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
+
 
 
 app.listen(PORT, function() {
