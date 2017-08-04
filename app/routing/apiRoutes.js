@@ -1,28 +1,41 @@
-// ===============================================================================
-// LOAD DATA
-// We are linking our routes to a series of "data" sources.
 
-// ===============================================================================
+var friendsArray = require("../data/friends.js");
 
-var friends = require("../data/friends");
-
-
-// ===============================================================================
-// ROUTING
-// ===============================================================================
 
 module.exports = function(app) {
-  // API GET Requests
-  // Below code handles when users "visit" a page.
-  // In each of the below cases when a user visits a link
-  // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
-  // ---------------------------------------------------------------------------
-
   app.get("/api/friends", function(req, res) {
-    res.json(friends);
+    res.json(friendsArray);
+  });
+
+app.post("/api/friends", function(req, res) {
+  var newUserResults = req.body.scores;
+  var simpleArrayResults = [];
+  var userCount = 0;
+  var bestMatch = 0; 
+
+  for(var i=0; i<friendsArray.length; i++){
+      var resultsDifference = 0;
+
+      for(var j=0; j<newUserResults.length; j++){
+        resultsDifference += (Math.abs(parseInt(friendsArray[i].scores[j]) - parseInt(newUserResults[j])));
+      }
+
+
+simpleArrayResults.push(resultsDifference);
+}
+  for(var i=0; i<simpleArrayResults.length; i++){
+      if(simpleArrayResults[i] <= simpleArrayResults[bestMatch]){
+        bestMatch = i;
+      }
+    }
+    var mostCompatible = friendsArray[bestMatch];
+    res.json(mostCompatible);
+
+
+    friendsArray.push(req.body);
   });
 }
 
-app.post("/api/friends", function(req, res) {
-  friends.push(req.body);
-}
+
+
+

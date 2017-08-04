@@ -1,7 +1,7 @@
 var friendsArray = [
 {
 "name": "Bill Gates",
-"photo": "https://en.wikipedia.org/wiki/Bill_Gates#/media/File:Bill_Gates_June_2015.jpg",
+"photo": "https://commons.wikimedia.org/wiki/File:Bill_Gates_June_2015.jpg#/media/File:Bill_Gates_June_2015.jpg",
 "scores": [
 "5",
 "1",
@@ -17,7 +17,7 @@ var friendsArray = [
 },
 {
 "name": "Mark Cuban",
-"photo": "https://en.wikipedia.org/wiki/Mark_Cuban#/media/File:Mark_Cuban_TechCrunch_(cropped).jpg",
+"photo": "https://commons.wikimedia.org/wiki/File:Mark_Cuban_TechCrunch_(cropped).jpg#/media/File:Mark_Cuban_TechCrunch_(cropped).jpg",
 "scores": [
 "4",
 "2",
@@ -33,7 +33,7 @@ var friendsArray = [
 },
 {
 "name": "Jeff Bezos",
-"photo": "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+"photo": "https://commons.wikimedia.org/wiki/File:Jeff_Bezos_2016.jpg#/media/File:Jeff_Bezos_2016.jpg",
 "scores": [
 "5",
 "2",
@@ -49,7 +49,7 @@ var friendsArray = [
 },
 {
 "name": "Don Trump",
-"photo": "https://en.wikipedia.org/wiki/Donald_Trump#/media/File:Donald_Trump_Pentagon_2017.jpg",
+"photo": "https://commons.wikimedia.org/wiki/File:Donald_Trump_Pentagon_2017.jpg#/media/File:Donald_Trump_Pentagon_2017.jpg",
 "scores": [
 "3",
 "3",
@@ -65,7 +65,7 @@ var friendsArray = [
 },
 {
 "name": "Warren Buffet",
-"photo": "https://en.wikipedia.org/wiki/Warren_Buffett#/media/File:Warren_Buffett_KU_Visit.jpg1",
+"photo": "https://commons.wikimedia.org/wiki/File:Warren_Buffett_KU_Visit.jpg#/media/File:Warren_Buffett_KU_Visit.jpg",
 "scores": [
 "4",
 "3",
@@ -81,7 +81,7 @@ var friendsArray = [
 },
 {
 "name": "Mark Zucherberg",
-"photo": "https://en.wikipedia.org/wiki/Mark_Zuckerberg#/media/File:Mark_Zuckerberg_em_setembro_de_2014.jpg",
+"photo": "https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_em_setembro_de_2014.jpg#/media/File:Mark_Zuckerberg_em_setembro_de_2014.jpg",
 "scores": [
 "4",
 "4",
