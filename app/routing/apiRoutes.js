@@ -1,4 +1,4 @@
-
+var mysql = require('mysql');
 var friendsArray = require("../data/friends.js");
 
 
